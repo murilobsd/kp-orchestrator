@@ -4,3 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+kube = { version = "0.88.1", features = ["runtime", "derive"] }
+k8s-openapi = { version = "0.21.0", features = ["latest"] }
+serde_json = "1.0.113"
+tokio = { version = "1.35.1", features = ["time"] }
+
+[dev-dependencies]
+tokio = { version = "1.35.1", features = ["macros", "rt-multi-thread"] }
